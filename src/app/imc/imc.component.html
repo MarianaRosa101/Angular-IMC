@@ -1,0 +1,22 @@
+<div class = background>
+    <div class="box">
+
+        <h1>Calculadora de IMC</h1>
+        <p>
+
+        Altura (m):
+        <input type="number" [(ngModel)]="altura">
+        </p>
+
+        Peso (kg):
+        <input type="number" [(ngModel)]="peso">
+        <div class="button">
+        <button (click)="calcular()">Calcular</button>
+        </div>
+
+        <p *ngIf="imc">Seu IMC é: {{imc.toFixed(2)}}.</p>
+        <p *ngIf="classificacao">Sua classificação é: {{classificacao}}.</p>
+
+    </div>
+</div>
+  
